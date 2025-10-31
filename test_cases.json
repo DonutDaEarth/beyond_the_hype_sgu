@@ -1,0 +1,251 @@
+{
+  "test_categories": {
+    "basic_arithmetic": [
+      {
+        "id": 1,
+        "prompt": "question: What is 347 + 589? answer:",
+        "correct_answer": "936",
+        "difficulty": "easy",
+        "operation": "addition"
+      },
+      {
+        "id": 2,
+        "prompt": "question: What is 1000 - 347? answer:",
+        "correct_answer": "653",
+        "difficulty": "easy",
+        "operation": "subtraction"
+      },
+      {
+        "id": 3,
+        "prompt": "question: What is 23 multiplied by 17? answer:",
+        "correct_answer": "391",
+        "difficulty": "medium",
+        "operation": "multiplication"
+      },
+      {
+        "id": 4,
+        "prompt": "question: What is 144 divided by 12? answer:",
+        "correct_answer": "12",
+        "difficulty": "easy",
+        "operation": "division"
+      }
+    ],
+    "percentage_calculations": [
+      {
+        "id": 5,
+        "prompt": "question: What is 25% of 80? answer:",
+        "correct_answer": "20",
+        "difficulty": "medium",
+        "real_world": "discount calculations"
+      },
+      {
+        "id": 6,
+        "prompt": "question: If a shirt costs $25 and is 20% off, what is the sale price? answer:",
+        "correct_answer": "$20",
+        "difficulty": "medium",
+        "real_world": "retail pricing"
+      },
+      {
+        "id": 7,
+        "prompt": "question: A company's revenue grew from $100 million to $125 million. What is the percentage growth? answer:",
+        "correct_answer": "25%",
+        "difficulty": "hard",
+        "real_world": "financial analysis"
+      }
+    ],
+    "counting": [
+      {
+        "id": 8,
+        "prompt": "question: Count the people in this list: John, Mary, Steve, Alice, Bob, Carol, David, Emma, Frank, Grace. How many people? answer:",
+        "correct_answer": "10",
+        "difficulty": "easy",
+        "list_items": [
+          "John",
+          "Mary",
+          "Steve",
+          "Alice",
+          "Bob",
+          "Carol",
+          "David",
+          "Emma",
+          "Frank",
+          "Grace"
+        ]
+      },
+      {
+        "id": 9,
+        "prompt": "question: How many vowels are in the word 'education'? answer:",
+        "correct_answer": "5",
+        "difficulty": "medium"
+      }
+    ],
+    "statistics": [
+      {
+        "id": 10,
+        "prompt": "question: The test scores are: 85, 90, 78, 92, 88. What is the average score? answer:",
+        "correct_answer": "86.6",
+        "difficulty": "medium",
+        "operation": "mean"
+      },
+      {
+        "id": 11,
+        "prompt": "question: What is the sum of 15, 25, and 35? answer:",
+        "correct_answer": "75",
+        "difficulty": "easy",
+        "operation": "sum"
+      }
+    ],
+    "consistency_tests": [
+      {
+        "id": 12,
+        "base_problem": "15 + 23 = 38",
+        "variations": [
+          {
+            "prompt": "question: If you have 15 apples and buy 23 more, how many apples do you have? answer:",
+            "style": "word problem"
+          },
+          {
+            "prompt": "question: Calculate the total: 15 apples plus 23 apples. answer:",
+            "style": "formal"
+          },
+          {
+            "prompt": "question: 15 + 23 = ? answer:",
+            "style": "symbolic"
+          }
+        ],
+        "correct_answer": "38"
+      }
+    ],
+    "financial_reporting": [
+      {
+        "id": 13,
+        "text": "TechCorp reported quarterly earnings for Q3 2024. Revenue reached $450 million, representing a 23% increase from the previous quarter's $366 million. Operating expenses were $280 million, resulting in an operating profit of $170 million. The company's net profit margin improved to 32%, up from 28% in Q2. Employee headcount grew from 1,250 to 1,450 employees.",
+        "task": "summarization",
+        "key_numbers": {
+          "current_revenue": "$450 million",
+          "growth_rate": "23%",
+          "previous_revenue": "$366 million",
+          "operating_expenses": "$280 million",
+          "operating_profit": "$170 million",
+          "current_margin": "32%",
+          "previous_margin": "28%",
+          "current_employees": "1,450",
+          "previous_employees": "1,250"
+        },
+        "risk_level": "HIGH",
+        "domain": "finance"
+      },
+      {
+        "id": 14,
+        "text": "Stock XYZ opened at $145.50, reached a high of $152.30, dropped to a low of $143.20, and closed at $148.75. Trading volume was 2.3 million shares, up from yesterday's 1.8 million.",
+        "task": "summarization",
+        "key_numbers": {
+          "open": "$145.50",
+          "high": "$152.30",
+          "low": "$143.20",
+          "close": "$148.75",
+          "volume": "2.3 million",
+          "previous_volume": "1.8 million"
+        },
+        "risk_level": "CRITICAL",
+        "domain": "finance"
+      }
+    ],
+    "medical_scenarios": [
+      {
+        "id": 15,
+        "text": "Patient prescribed medication as follows: Morning dose of 50mg, afternoon dose of 50mg, evening dose of 50mg. Total daily dosage is 150mg. Patient weight: 68kg. Dosage per kg: 2.2mg/kg. Maximum safe dose: 200mg per day.",
+        "task": "summarization",
+        "key_numbers": {
+          "morning_dose": "50mg",
+          "afternoon_dose": "50mg",
+          "evening_dose": "50mg",
+          "total_daily": "150mg",
+          "patient_weight": "68kg",
+          "dose_per_kg": "2.2mg/kg",
+          "max_safe_dose": "200mg"
+        },
+        "risk_level": "CRITICAL",
+        "domain": "healthcare",
+        "note": "Life-threatening if wrong"
+      },
+      {
+        "id": 16,
+        "text": "Patient vital signs recorded at 08:00: Blood pressure 120/80 mmHg, heart rate 72 bpm, temperature 37.2°C, oxygen saturation 98%. Blood glucose level: 95 mg/dL.",
+        "task": "summarization",
+        "key_numbers": {
+          "bp_systolic": "120",
+          "bp_diastolic": "80",
+          "heart_rate": "72",
+          "temperature": "37.2",
+          "oxygen_sat": "98%",
+          "blood_glucose": "95"
+        },
+        "risk_level": "CRITICAL",
+        "domain": "healthcare"
+      }
+    ],
+    "multi_step_reasoning": [
+      {
+        "id": 17,
+        "prompt": "question: A store has 50 shirts. They sell 15 in the morning and 20 in the afternoon. How many shirts are left? answer:",
+        "correct_answer": "15",
+        "difficulty": "medium",
+        "steps": ["50 - 15 = 35", "35 - 20 = 15"]
+      },
+      {
+        "id": 18,
+        "prompt": "question: If 3 pencils cost $1.50, how much do 7 pencils cost? answer:",
+        "correct_answer": "$3.50",
+        "difficulty": "hard",
+        "steps": ["1.50 / 3 = 0.50", "0.50 * 7 = 3.50"]
+      }
+    ],
+    "edge_cases": [
+      {
+        "id": 19,
+        "prompt": "question: What is 0 + 0? answer:",
+        "correct_answer": "0",
+        "difficulty": "trivial",
+        "note": "Tests zero handling"
+      },
+      {
+        "id": 20,
+        "prompt": "question: What is 1 * 1? answer:",
+        "correct_answer": "1",
+        "difficulty": "trivial",
+        "note": "Tests identity"
+      },
+      {
+        "id": 21,
+        "prompt": "question: What is 100 - 100? answer:",
+        "correct_answer": "0",
+        "difficulty": "trivial",
+        "note": "Tests zero result"
+      }
+    ]
+  },
+  "metadata": {
+    "total_tests": 21,
+    "categories": 9,
+    "difficulty_distribution": {
+      "trivial": 3,
+      "easy": 6,
+      "medium": 8,
+      "hard": 4
+    },
+    "risk_levels": {
+      "CRITICAL": 3,
+      "HIGH": 1,
+      "MEDIUM": 17
+    },
+    "domains": [
+      "arithmetic",
+      "finance",
+      "healthcare",
+      "statistics",
+      "retail",
+      "general"
+    ]
+  }
+}
